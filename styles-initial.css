@@ -32,10 +32,10 @@ main {
 }
 
 /*ESTILOS PARA DISPOTIVOS HASTA 700 PX*/
-@media  (max-height:700px) {
-    
+@media (max-height:700px) {
 
-    .principal-image {
+
+    .imagen-principal {
         display: flex;
         flex-direction: column;
         position: relative;
@@ -44,7 +44,7 @@ main {
         opacity: 0;
     }
 
-    .principal-image img {
+    .imagen-principal img {
         width: 100%;
         filter: grayscale(40%);
         margin-bottom: 0%;
@@ -61,13 +61,16 @@ main {
         margin-bottom: 0%;
         font-size: 28px;
     }
-    .nombre-novios{
-        margin-top:5%; 
+
+    .nombre-novios {
+        margin-top: 5%;
         margin-bottom: 5%;
-        display:flex;
+        display: flex;
         justify-content: center;
         align-content: flex-start;
+        opacity: 0;
     }
+
     h1 {
         font-family: 'rouge script', cursive;
         font-weight: 100;
@@ -75,10 +78,10 @@ main {
         text-align: center;
         margin-bottom: 0%;
         margin-top: 0%;
-        margin-right:2%;
+        margin-right: 2%;
         margin-left: 2%;
     }
-   
+
     h3 {
         font-family: 'Playfair display', sans-serif;
         font-size: 20px;
@@ -87,11 +90,16 @@ main {
         margin-top: 0%
     }
 
+    .fecha {
+        opacity: 0;
+    }
+
     .click {
         display: flex;
         margin-top: 5%;
         margin-bottom: 8%;
         position: relative;
+        opacity: 0;
     }
 
     .bota img {
@@ -107,32 +115,37 @@ main {
         margin-right: 0%;
         padding-right: 0%;
         margin-left: 7%;
-        position:absolute;
-        width:20%;
+        position: absolute;
+        width: 20%;
 
     }
 
-    }
-    .flecha{
-        width: 15%;
-        position:absolute;
-        margin-top:21%;
-        margin-left:5%;
-        transform:rotate(20deg);
-    }
+}
 
-    h4 {
-        font-family: 'Hammersmith One', sans-serif;
-        font-weight: 200;
-        font-size: 12px;
-        text-align: center;
-        margin-top: 5%;
-    }
+.flecha {
+    width: 15%;
+    position: absolute;
+    margin-top: 21%;
+    margin-left: 5%;
+    transform: rotate(20deg);
+}
+
+h4 {
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.leyenda-reservacion {
+    opacity: 0;
+}
 
 /*ESTILOS PARA DISPOSITIVOS DE 700 A 900PX*/
 
-@media (min-height:700px) and (max-height:950px){
-.principal-image {
+@media (min-height:700px) and (max-height:950px) {
+    .imagen-principal {
         display: flex;
         flex-direction: column;
         position: relative;
@@ -140,7 +153,7 @@ main {
         opacity: 0;
     }
 
-    .principal-image img {
+    .imagen-principal img {
         width: 100%;
         filter: grayscale(40%);
         margin-bottom: 0%;
@@ -157,11 +170,13 @@ main {
         margin-bottom: 0%;
         font-size: 32px;
     }
-    .nombre-novios{
-        margin-top:10%;
-        margin-bottom:2%;
+
+    .nombre-novios {
+        margin-top: 10%;
+        margin-bottom: 2%;
         position: relative;
     }
+
     h1 {
         font-family: 'rouge script', cursive;
         font-weight: 100;
@@ -170,10 +185,12 @@ main {
         margin-bottom: 0%;
         margin-top: 0%;
     }
-    .y { 
-        margin-top:-5%;
-        margin-left:3%;
+
+    .y {
+        margin-top: -5%;
+        margin-left: 3%;
     }
+
     h3 {
         font-family: 'Playfair display', sans-serif;
         font-size: 25px;
@@ -187,7 +204,7 @@ main {
         margin-top: 5%;
         margin-bottom: 8%;
         position: relative;
-        margin-left:2%;
+        margin-left: 2%;
     }
 
     .bota img {
@@ -203,31 +220,32 @@ main {
         margin-right: 0%;
         padding-right: 0%;
         margin-left: 7%;
-        position:absolute;
-        width:20%;
+        position: absolute;
+        width: 20%;
 
     }
 
-    }
-    .flecha{
-        width: 15%;
-        position:absolute;
-        margin-top:22%;
-        margin-left:7%;
-        transform:rotate(20deg);
-    }
+}
 
-    h4 {
-        font-family: 'Hammersmith One', sans-serif;
-        font-weight: 200;
-        font-size: 12px;
-        text-align: center;
-        margin-top: 5%;
-    }
+.flecha {
+    width: 15%;
+    position: absolute;
+    margin-top: 22%;
+    margin-left: 7%;
+    transform: rotate(20deg);
+}
+
+h4 {
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5%;
+}
 
 
-@Media (min-width:601px){
-  main {
+@Media (min-width:601px) {
+    main {
         max-width: 375px;
         margin: auto;
     }
