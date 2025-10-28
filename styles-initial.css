@@ -31,75 +31,204 @@ main {
     src: url(./fonts/jkiticon.woff2);
 }
 
+/*ESTILOS PARA DISPOTIVOS HASTA 700 PX*/
+@media  (max-height:700px) {
+    
+
+    .principal-image {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        scale: 0.7;
+        opacity: 0;
+    }
+
+    .principal-image img {
+        width: 100%;
+        filter: grayscale(40%);
+        margin-bottom: 0%;
+    }
+
+    h2 {
+        position: absolute;
+        bottom: -2%;
+        width: 100%;
+        font-family: 'Vidaloka', serif;
+        font-weight: 200;
+        margin-top: 0%;
+        text-align: center;
+        margin-bottom: 0%;
+        font-size: 28px;
+    }
+    .nombre-novios{
+        margin-top:5%; 
+        margin-bottom: 5%;
+        display:flex;
+        justify-content: center;
+        align-content: flex-start;
+    }
+    h1 {
+        font-family: 'rouge script', cursive;
+        font-weight: 100;
+        font-size: 250%;
+        text-align: center;
+        margin-bottom: 0%;
+        margin-top: 0%;
+        margin-right:2%;
+        margin-left: 2%;
+    }
+   
+    h3 {
+        font-family: 'Playfair display', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 1%;
+        margin-top: 0%
+    }
+
+    .click {
+        display: flex;
+        margin-top: 5%;
+        margin-bottom: 8%;
+        position: relative;
+    }
+
+    .bota img {
+        width: 60%;
+        margin-right: 30%;
+        margin-left: 20%;
+    }
+
+    .click p {
+        font-family: 'Cormorant';
+        font-size: 12px;
+        margin-top: 10%;
+        margin-right: 0%;
+        padding-right: 0%;
+        margin-left: 7%;
+        position:absolute;
+        width:20%;
+
+    }
+
+    }
+    .flecha{
+        width: 15%;
+        position:absolute;
+        margin-top:21%;
+        margin-left:5%;
+        transform:rotate(20deg);
+    }
+
+    h4 {
+        font-family: 'Hammersmith One', sans-serif;
+        font-weight: 200;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+/*ESTILOS PARA DISPOSITIVOS DE 700 A 900PX*/
+
+@media (min-height:700px) and (max-height:950px){
 .principal-image {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    scale: 0.7;
-    opacity: 0;
-}
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        scale: 0.7;
+        opacity: 0;
+    }
 
-.principal-image img {
-    width: 100%;
-    filter: grayscale(40%);
-    margin-bottom: 0%;
-}
+    .principal-image img {
+        width: 100%;
+        filter: grayscale(40%);
+        margin-bottom: 0%;
+    }
 
-h2 {
-    position: absolute;
-    bottom: -2%;
-    width: 100%;
-    font-family: 'Vidaloka', serif;
-    font-weight: 200;
-    margin-top: 0%;
-    text-align: center;
-    margin-bottom: 0%;
-    font-size: 28px;
-}
+    h2 {
+        position: absolute;
+        bottom: -5%;
+        width: 100%;
+        font-family: 'Vidaloka', serif;
+        font-weight: 200;
+        margin-top: 2%;
+        text-align: center;
+        margin-bottom: 0%;
+        font-size: 32px;
+    }
+    .nombre-novios{
+        margin-top:10%;
+        margin-bottom:2%;
+        position: relative;
+    }
+    h1 {
+        font-family: 'rouge script', cursive;
+        font-weight: 100;
+        font-size: 350%;
+        text-align: center;
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+    .y { 
+        margin-top:-5%;
+        margin-left:3%;
+    }
+    h3 {
+        font-family: 'Playfair display', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 2%;
+        margin-top: 0%
+    }
 
-h1 {
-    font-family: 'rouge script', cursive;
-    font-weight: 100;
-    font-size: 250%;
-    text-align: center;
-    margin-bottom: 2%;
-    margin-top: 2%;
-}
+    .click {
+        display: flex;
+        margin-top: 5%;
+        margin-bottom: 8%;
+        position: relative;
+        margin-left:2%;
+    }
 
-h3 {
-    font-family: 'Playfair display', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 1%;
-    margin-top: 0%
-}
+    .bota img {
+        width: 65%;
+        margin-right: 30%;
+        margin-left: 20%;
+    }
 
-.click {
-    display: flex;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
+    .click p {
+        font-family: 'Cormorant';
+        font-size: 14px;
+        margin-top: 10%;
+        margin-right: 0%;
+        padding-right: 0%;
+        margin-left: 7%;
+        position:absolute;
+        width:20%;
 
-.bota img {
-    width: 70%;
-    margin-right: 42%;
-    margin-left: 0%;
-}
+    }
 
-.click p {
-    font-family: 'Cormorant';
-    font-size: 12px;
-    margin-top: 10%;
-    margin-right: 0%;
-    padding-right: 0%;
-    margin-left: 5%;
+    }
+    .flecha{
+        width: 15%;
+        position:absolute;
+        margin-top:22%;
+        margin-left:7%;
+        transform:rotate(20deg);
+    }
 
-}
+    h4 {
+        font-family: 'Hammersmith One', sans-serif;
+        font-weight: 200;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 5%;
+    }
 
-h4 {
-    font-family: 'Hammersmith One', sans-serif;
-    font-weight: 200;
-    font-size: 12px;
-    text-align: center;
-    margin-top: 5%;
+
+@Media (min-width:601px){
+  main {
+        max-width: 375px;
+        margin: auto;
+    }
 }
