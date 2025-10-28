@@ -1,15 +1,15 @@
 body {
     margin: 0%;
     padding: 0%;
-    background-color:#efefef  ;
+    background-color: #efefef;
 
 }
 
-main{
-    margin:1%;
+main {
+    margin: 1%;
     padding: 1%;
- 
 }
+
 /*FONTS */
 @font-face {
     font-family: "Serif-parrafo";
@@ -31,51 +31,62 @@ main{
     src: url(./fonts/jkiticon.woff2);
 }
 
-.principal-image{
+.principal-image {
     display: flex;
     flex-direction: column;
-}
-.principal-image img{
-    width:100%;
-    filter: grayscale(40%);
-    margin-bottom:0%;
-}
-h2 { 
-    font-family:'Vidaloka', serif ;
-    font-weight: 200;
-    margin-top:0%;
-    text-align: center;
-    margin-bottom:0%;
-    font-size:28px;
-}
-h1 { 
-    font-family:'rouge script', cursive;
-    font-weight: 100;
-    font-size:250%;
-    text-align: center;
-    margin-bottom:2%;
-    margin-top:2%;
+    position: relative;
+    scale: 0.7;
+    opacity: 0;
 }
 
-h3{
-    font-family:'Playfair display', sans-serif;
+.principal-image img {
+    width: 100%;
+    filter: grayscale(40%);
+    margin-bottom: 0%;
+}
+
+h2 {
+    position: absolute;
+    bottom: -2%;
+    width: 100%;
+    font-family: 'Vidaloka', serif;
+    font-weight: 200;
+    margin-top: 0%;
+    text-align: center;
+    margin-bottom: 0%;
+    font-size: 28px;
+}
+
+h1 {
+    font-family: 'rouge script', cursive;
+    font-weight: 100;
+    font-size: 250%;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+h3 {
+    font-family: 'Playfair display', sans-serif;
     font-size: 20px;
     text-align: center;
-    margin-bottom:1%;
-    margin-top:0%
+    margin-bottom: 1%;
+    margin-top: 0%
 }
-.click{
+
+.click {
     display: flex;
-    margin-top:5%;
-    margin-bottom:5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
-.bota img{
+
+.bota img {
     width: 70%;
-    margin-right:42%;
+    margin-right: 42%;
     margin-left: 0%;
 }
 
-.click p{
+.click p {
     font-family: 'Cormorant';
     font-size: 12px;
     margin-top: 10%;
@@ -85,12 +96,10 @@ h3{
 
 }
 
-
-
 h4 {
-    font-family:'Hammersmith One', sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
     font-weight: 200;
     font-size: 12px;
     text-align: center;
-    margin-top:5%;
+    margin-top: 5%;
 }
