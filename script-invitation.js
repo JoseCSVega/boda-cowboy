@@ -39,3 +39,20 @@ let actualizarContador = setInterval(() => {
         document.querySelector(".contador-datos-segundos").innerHTML = segundos;
     }
 }, 1000);
+
+
+// CARRUCEL DE IMÁGENES
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});

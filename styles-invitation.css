@@ -8,10 +8,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin:1%;
-    padding:1%;
     text-align: center;
 }
+
 /*FONTS */
 @font-face {
     font-family: "Serif-parrafo";
@@ -80,6 +79,7 @@ h2 {
     font-size: 20px;
     letter-spacing: 2px;
 }
+
 .title {
     font-family: "Cormorant", serif;
     text-align: center;
@@ -87,11 +87,11 @@ h2 {
     letter-spacing: 3.5px;
     margin-top: 5%;
     margin-bottom: 5%;
-    color:#BC6C25
+    color: #BC6C25
 }
 
 button {
-    background-color:#000000;
+    background-color: #000000;
     color: white;
     border-radius: 20px;
     padding: 5px;
@@ -110,23 +110,25 @@ button:hover {
 }
 
 /*SEECIÓN INTRO*/
-.intro-parrafo{
-     margin-left: 5%;
+.intro-parrafo {
+    margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 2%;
     font-family: "serif-parrafo-italic", serif;
     font-size: 20px;
     letter-spacing: 2px;
 }
-.polaroid-1{
+
+.polaroid-1 {
 
     align-content: center;
     justify-content: center;
     align-items: center;
 }
+
 .polaroid-1 img {
     width: 70%;
-    filter:grayscale(30%);
+    filter: grayscale(30%);
 
 }
 
@@ -135,11 +137,8 @@ button:hover {
 /*SECCIÓN NOMBRES*/
 
 .bendicion {
-    font-size:25px;
+    font-size: 25px;
 }
-
-
-
 
 
 
@@ -285,7 +284,7 @@ button:hover {
 }
 
 /*SECCIÓN VESTIMENTA*/
-.vestimenta-parrafo{
+.vestimenta-parrafo {
     font-family: "serif-parrafo", serif;
     margin: 5%;
     font-size: 25px;
@@ -294,11 +293,74 @@ button:hover {
     letter-spacing: 1.5px;
 }
 
-.regalo-cuenta{
+.regalo-cuenta {
     font-family: "serif-parrafo", serif;
     margin: 1%;
     font-size: 20px;
     font-weight: 600;
     font-style: normal;
     letter-spacing: 1.5px;
+}
+
+
+/*ESTILOS SECCIÓN GALERIA*/
+
+.mySwiper {
+    width: 95%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Wrapper de slides */
+.swiper-wrapper {
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+}
+
+/* Slide individual */
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    position: absolute;
+    filter: grayscale(60%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    min-height: 0;
+}
+
+
+/* Paginación básica */
+.swiper-pagination {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.swiper-pagination-bullet {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: gray;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    background: black;
 }
