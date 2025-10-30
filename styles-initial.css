@@ -216,7 +216,7 @@ h4 {
     .click p {
         font-family: 'Cormorant';
         font-size: 14px;
-        margin-top: 10%;
+        margin-top: 8%;
         margin-right: 0%;
         padding-right: 0%;
         margin-left: 7%;
@@ -230,7 +230,7 @@ h4 {
 .flecha {
     width: 15%;
     position: absolute;
-    margin-top: 22%;
+    margin-top: 24%;
     margin-left: 7%;
     transform: rotate(20deg);
 }
