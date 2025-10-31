@@ -334,7 +334,7 @@ button:hover {
 
 .swiper-slide img {
     position: absolute;
-    filter: grayscale(60%);
+    filter: grayscale(45%);
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -363,4 +363,85 @@ button:hover {
 
 .swiper-pagination-bullet-active {
     background: black;
+}
+
+
+/*ESTILOS SECCIÓN CONFIRMACIÓN*/
+.confirmacion {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    text-align: left;
+}
+
+.confirmacion-pase {
+    margin: auto;
+}
+
+.confirmacion img {
+    width: 50px;
+}
+
+.confirmacion h2,
+.confirmacion h3,
+.confirmacion p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.confirmacion-formulario button {
+    width: 150px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    margin: auto;
+}
+
+.confirmacion p {
+    font-family: "serif-parrafo-italic", serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin: 2%;
+
+}
+
+.confirmacion-formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.confirmacion-formulario label {
+    font-family: "formulario", serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.confirmacion-formulario input,
+select,
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    font-family: "formulario", serif;
+    font-style: italic;
+    font-size: medium;
+}
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    ;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
 }

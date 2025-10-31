@@ -129,30 +129,42 @@
             </div>
         </section>
 
-
         <div class="swiper mySwiper">
 
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="./photos/1.jpg" alt="imagen 1">
                 </div>
+                <!--
                 <div class="swiper-slide">
-                    <img src="./photos/2.jpg" alt="imagen 3">
+                    <img src="./photos/2.jpg" alt="imagen 2">
+                </div>
+                -->
+                <div class="swiper-slide">
+                    <img src="./photos/3.jpg" alt="imagen 3">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./photos/3.jpg" alt="imagen 4">
+                    <img src="./photos/4.jpg" alt="imagen 4">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./photos/4.jpg" alt="imagen 5">
+                    <img src="./photos/5.jpg" alt="imagen 5">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./photos/5.jpg" alt="imagen 6">
+                    <img src="./photos/6.jpg" alt="imagen 6">
+                </div>
+                <!--
+                <div class="swiper-slide">
+                    <img src="./photos/7.jpg" alt="imagen 7">
+                </div>
+                -->
+                <div class="swiper-slide">
+                    <img src="./photos/8.jpg" alt="imagen 8">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./photos/6.jpg" alt="imagen 7">
+                    <img src="./photos/9.jpg" alt="imagen 9">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./photos/7.jpg" alt="imagen 8">
+                    <img src="./photos/10.jpg" alt="imagen 10">
                 </div>
             </div>
 
@@ -184,13 +196,55 @@
             </p>
         </section>
 
-        <section class="formulario-confirmacion">
+        <section class="confirmacion">
+            <h2 class="title">CONFIRMACIÓN</h2>
+
+            <h3>Hemos reservado para usted un</h3>
+            <div class="confirmacion-pase">
+                <img src="./imagenes/pase.png">
+            </div>
+            <h3 class="pase">Pase personal</h3>
+
+            <p> Agradecemos confirmar su asistencia antes del 12 de noviembre </p>
+
+            <form class="confirmacion-formulario" method="post" name="confirmacion-formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre..." required>
+
+                <label for="input-confirmacion">¿Podrás asistir?</label>
+                <select name="confirmacion" id="input-confirmacion">
+                    <option value="si">Si, asistiré</option>
+                    <option value="no">No, lo siento</option>
+                </select>
+
+                <label for="input-personas">Número de personas que asistirán:</label>
+                <input type="number" id="input-personas" name="personas" placeholder="Número de personas">
+
+                <label for="input-mensaje">Mensaje:</label>
+                <textarea id="input-mensaje" name="mensaje" placeholder="Escribe tu mensaje o buenos deseos"
+                    rows="5"></textarea>
+
+                <button type="submit" class="boton-confirmacion">CONFIRMAR</button>
+
+            </form>
+
+            <dialog id="confirmacion-dialog">
+                <h3>¡Gracias por confirmar tu asistencia!</h3>
+                <p>Estamos emocionados de celebrar este día especial contigo.</p>
+                <form method="dialog">
+                    <button class="recargar">Cerrar</button>
+                </form>
+            </dialog>
+            <dialog id="error-dialog">
+                <h3>Error</h3>
+                <p>Error al enviar el formulario. Por favor, intentalo más tarde</p>
+                <form method="dialog">
+                    <button>Cerrar</button>
+                </form>
+            </dialog>
 
         </section>
 
-        <section class="imagen-despedida">
-            <img src="" alt="">
-        </section>
 
         <footer>
 
