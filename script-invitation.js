@@ -1,7 +1,14 @@
 
+//AUDIO
+const audio = document.getElementById('audio');
+window.onload=()=>{
+    audio.play();
+};
+
 // LOGICA DEL CONTADOR
 
 const fechaBoda = new Date(2025, 10, 28, 16, 0, 0).getTime();
+
 
 let actualizarContador = setInterval(() => {
     let hoy = new Date().getTime();
