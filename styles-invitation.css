@@ -2,13 +2,13 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(imagenes/fondo-1.jpg);
-   /* background-image: url(imagenes/fondo-4.jpg)*/
 }
 
 main {
- 
+
     align-items: center;
     text-align: center;
+    overflow-x: hidden;
 }
 
 /*FONTS */
@@ -116,7 +116,7 @@ button:hover {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 2%;
-    margin-top:10%;
+    margin-top: 10%;
     font-family: "serif-parrafo", serif;
     font-size: 20px;
     font-weight: 600;
@@ -129,8 +129,8 @@ button:hover {
     align-content: center;
     justify-content: center;
     align-items: center;
-    margin-bottom:10%;
-    margin-top:5%;
+    margin-bottom: 10%;
+    margin-top: 5%;
 }
 
 .polaroid-1 img {
@@ -138,14 +138,16 @@ button:hover {
     filter: grayscale(30%);
 
 }
-.cactus-intro{
-    position:relative;
+
+.cactus-intro {
+    position: relative;
 }
-.cactus-intro img{
-    width:60%;
-    position:absolute;
-    margin-left:-80%;
-    margin-top:-40%;
+
+.cactus-intro img {
+    width: 60%;
+    position: absolute;
+    margin-left: -80%;
+    margin-top: -40%;
     opacity: 40%;
 }
 
@@ -157,33 +159,36 @@ button:hover {
     font-size: 22px;
 }
 
-.nombre-novios{
-    margin-top:5%;
-    margin-bottom:10%;
+.nombre-novios {
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 30px;
 }
-.nombres-padres{
+
+.nombres-padres {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     justify-content: space-between;
     padding: 0px;
-    margin-bottom:5%;
+    margin-bottom: 5%;
 }
+
 .nombres-padres h2 {
     font-family: 'serif-parrafo-italic', Serif;
-    font-size: 15px;;
+    font-size: 15px;
+    ;
 }
 
 
 /*ESTILOS SECCIÓN UBICACIONES*/
 
 .informacion-fecha {
-    width:80%;
+    width: 80%;
 }
 
 .ubicaciones-ceremonia {
@@ -223,7 +228,7 @@ h1 {
 .ubicaciones-recepcion {
     text-align: center;
     justify-items: center;
-    position:relative;
+    position: relative;
 }
 
 .ubicaciones-recepcion img {
@@ -231,17 +236,18 @@ h1 {
     margin-top: 10%;
     margin-bottom: 1%;
 }
-.cactus-finca img{
-    width:40%;
-    position:absolute;
-    margin-top:-45%;
+
+.cactus-finca img {
+    width: 40%;
+    position: absolute;
+    margin-top: -45%;
     margin-left: 15%;
     opacity: 70%;
 }
 
 
 /*SECCIÓN CONTADOR*/
-.contador{
+.contador {
 
     display: flex;
     flex-direction: column;
@@ -250,7 +256,7 @@ h1 {
     width: 100%;
 }
 
-.contador-leyenda{
+.contador-leyenda {
     font-family: "Cormorant", serif;
     text-align: center;
     font-size: 35PX;
@@ -262,18 +268,19 @@ h1 {
 
 }
 
-.contador-datos{
+.contador-datos {
     display: grid;
-    grid-template-columns:repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-content: space-between;
     padding: 0px;
-    margin:2%;
+    margin: 2%;
     font-family: "serif-parrafo", serif;
     font-style: normal;
     letter-spacing: 1.5px;
     text-align: center;
 }
+
 .contador-datos-dias,
 .contador-datos-horas,
 .contador-datos-minutos,
@@ -292,7 +299,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin: 5%;
-    margin-bottom:10%;
+    margin-bottom: 10%;
 }
 
 .itinerario-derecha {
@@ -379,6 +386,7 @@ h1 {
     top: 520px;
     left: -35px;
 }
+
 /*SECCIÓN VESTIMENTA*/
 .vestimenta-parrafo {
     font-family: "serif-parrafo", serif;
@@ -388,10 +396,12 @@ h1 {
     font-style: normal;
     letter-spacing: 1.5px;
 }
+
 .vestimenta-imagen {
     width: 50%;
-    margin-top:-3%;
+    margin-top: -3%;
 }
+
 .regalo-cuenta {
     font-family: "serif-parrafo", serif;
     margin: 1%;
@@ -433,7 +443,6 @@ h1 {
 
 .swiper-slide img {
     position: absolute;
-    filter: grayscale(45%);
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -545,10 +554,23 @@ dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.ultima-foto img{
-    width:96%;
-    margin:2%;
-    filter:grayscale(40%)
+.ultima-foto img {
+    width: 96%;
+    margin: 2%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    height: 150px;
+}
+
+footer p {
+    color: white;
+    font-size: 12px;
 }
 
 
