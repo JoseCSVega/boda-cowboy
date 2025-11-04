@@ -125,7 +125,6 @@ button:hover {
 }
 
 .polaroid-1 {
-
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -134,6 +133,7 @@ button:hover {
 }
 
 .polaroid-1 img {
+    scale: 0.7;
     width: 80%;
 
 }
@@ -161,6 +161,7 @@ button:hover {
 .nombre-novios {
     margin-top: 5%;
     margin-bottom: 10%;
+    opacity: 0;
 }
 
 h1 {
@@ -178,6 +179,21 @@ h1 {
 }
 
 .nombres-padres h2 {
+    font-family: 'serif-parrafo-italic', Serif;
+    font-size: 15px;
+    ;
+}
+
+.nombres-padrinos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+    padding: 0px;
+    margin-bottom: 5%;
+}
+
+.nombres-padrinos h2 {
     font-family: 'serif-parrafo-italic', Serif;
     font-size: 15px;
     ;
@@ -487,6 +503,7 @@ h1 {
 
 .confirmacion img {
     width: 50px;
+    filter: invert(39%) sepia(76%) saturate(469%) hue-rotate(347deg) brightness(102%) contrast(89%);
 }
 
 .confirmacion h2,

@@ -1,7 +1,7 @@
 
 //AUDIO
 const audio = document.getElementById('audio');
-window.onload=()=>{
+window.onload = () => {
     audio.play();
 };
 
@@ -87,4 +87,101 @@ form.addEventListener('submit', e => {
             window.location.reload()
         }))
         .catch(error => dialogError.showModal())
-})
+});
+
+
+// REGISTRAR PLUGIN
+gsap.registerPlugin(ScrollTrigger);
+
+
+// ANIMACIONES
+
+gsap.from(".intro-parrafo", {
+    scrollTrigger: {
+        trigger: ".intro-parrafo",
+        start: "top 20%",
+    },
+    x: -500,
+    duration: 1.5
+});
+
+gsap.to(".polaroid-1 > img", {
+    scale: 1,
+    duration: 2,
+    scrollTrigger: {
+        trigger: ".polaroid-1 > img",
+        start: "top center",
+    }
+});
+
+gsap.to(".nombre-novios", {
+    opacity: 1,
+    duration: 6,
+    scrollTrigger: {
+        trigger: ".nombre-novios",
+    }
+});
+
+gsap.from(".bendicion-padres", {
+    scrollTrigger: {
+        trigger: ".bendicion-padres",
+        start: "top 80%",
+    },
+    x: -500,
+    duration: 1.5
+});
+
+gsap.from(".nombres-padres", {
+    scrollTrigger: {
+        trigger: ".nombres-padres",
+        start: "top 80%",
+    },
+    x: -500,
+    duration: 1.5
+});
+
+gsap.from(".bendicion-padrinos", {
+    scrollTrigger: {
+        trigger: ".bendicion-padrinos",
+        start: "top 85%",
+    },
+    x: -500,
+    duration: 1.5
+});
+
+gsap.from(".nombres-padrinos", {
+    scrollTrigger: {
+        trigger: ".nombres-padrinos",
+        start: "top 85%",
+    },
+    x: -500,
+    duration: 1.5
+});
+
+
+gsap.from(".ubicaciones-ceremonia-lugar, .ubicaciones-ceremonia-hora, .ubicaciones-ceremonia-direccion, .ubicaciones-ceremonia > a > button", {
+    scrollTrigger: {
+        trigger: ".ubicaciones-ceremonia-lugar",
+        start: "top 80%"
+    },
+    x: -500,
+    duration: 1.5
+});
+
+gsap.from(".ubicaciones-recepcion-lugar, .ubicaciones-recepcion-hora, .ubicaciones-recepcion-direccion, .ubicaciones-recepcion > a > button", {
+    scrollTrigger: {
+        trigger: ".ubicaciones-recepcion-lugar",
+        start: "top 80%"
+    },
+    x: -500,
+    duration: 1.5
+});
+
+gsap.from(".itinerario", {
+    scrollTrigger: {
+        trigger: ".itinerario",
+        start: "-120px 90%",
+    },
+    y: 300,
+    duration: 1.5
+});
